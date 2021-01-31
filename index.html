@@ -6,33 +6,113 @@
     <title>CSS Snippet Cheatsheet</title>
 </head>
 <body>
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
+   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
     <link rel="stylesheet" href="styles/styles.css">
 
     <header>
-        <h1>CSS Snippet Cheatsheet</h1>
-        <p>
+        <h1 class="unselectable">CSS Snippet Cheatsheet</h1>
+        <p class="unselectable">
             Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.
         </p>
     </header>
 
-    <main>
-    <div class="code-card">
-        <div class="card-header">
-            <h1>Flexbox Row</h1>
-        </div>
-            <p>
+    <section>
+        <div class="code-card">
+                <h2 class="card-header">Flexbox Row</h2>
+                <p class="unselectable">
                 Use these three properties to create a Flexbox row layout.
-            </p>
-            <div class="linear-gradient-background">
-                <h3>.row {</h3>
-                    <p>display: flex;</p>
-                    <p>flex-direction: row;</p>
-                    <p>flex-wrap: wrap;</p>
-                <h3>}</h3>
-            </div>
-    </div>
-    </main>
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.row {</h3>
+                        <p class="all">display: flex;</p>
+                        <p class="all">flex-direction: row;</p>
+                        <p class="all">flex-wrap: wrap;</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
     
+    <section>
+        <div class="code-card">
+                <h2 class="card-header unselectable">Flexbox Column</h2>
+                <p class="unselectable">
+                    Use this to create a Flexbox column layout.
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.column {</h3>
+                        <p class="all">display: flex;</p>
+                        <p class="all">flex-direction: column</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="code-card">
+                <h2 class="card-header unselectable">CSS Grid Layout</h2>
+                <p class="unselectable">
+                    Build a 12-column layout using CSS Grid
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.grid {</h3>
+                        <p class="all">display: grid;</p>
+                        <p class="all">width: 100%;</p>
+                        <p class="all">grid-template-columns: repeat(12, 1fr);</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="code-card">
+                <h2 class="card-header unselectable">Linear Gradients</h2>
+                <p class="unselectable">
+                    This will create a background linear gradient from top to bottom.
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.linear-gradient-background {</h3>
+                        <p class="all">background-image: linear-gradient(</p>
+                        <p class="all">rgba(232, 102, 236, 0.3) 0%,</p>
+                        <p class="all">rgba(232, 102, 236, 0.6) 100%</p>
+                        <p class="all"> );</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="code-card">
+                <h2 class="card-header unselectable">Box Transition Glow</h2>
+                <p class="unselectable">
+                    Use transition and box shadows to glow on hover.
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.code-card .card-header {</h3>
+                        <p class="all">border-radius: 8px;</p>
+                        <p class="all"> transition: all 0.5s ease-in-out;</p>
+                        <p class="all">}</p>
+                        <p class="all">.code-card:hover,
+                            .code-card:hover .card-header {</p>
+                        <p class="all">box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px</p>
+                        <p class="all">rgba(232, 102, 236, 1);</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="code-card">
+                <h2 class="card-header unselectable">Overlay Card with Title</h2>
+                <p class="unselectable">
+                    Use position properties and negative margins to raise elements higher than their natural starting point.
+                </p>
+                <div class="linear-gradient-background">
+                    <h3 class="all">.card-header {</h3>
+                        <p class="all">position: relative;</p>
+                        <p class="all">margin-top: -20px;</p>
+                  <h3 class="all">}</h3>
+                </div>
+        </div>
+    </section>
 </body>
 </html>
